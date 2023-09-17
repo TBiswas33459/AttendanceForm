@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbyeTfiWRrYPKYxN95eF77HPIoBVuwy08dIgVoEcAJjKmB1k2VR1d7SVVQs5Cv1WATTeDw/exec"
+            name="Attendance-Form" onsubmit="return validateForm();">
+
+            <input type="hidden" name="Submission Time" id="Submission Time">
+
+            <!-- Date Field -->
+            <label for="Attendance Date">Select a date:</label>
+                <input type="date" id="Attendance Date" name="Attendance Date" required><br>
+
+            <!-- Dropdown Buttons -->
+            <label for="ID">Choose your ID:</label>
+            <select id="ID" name="ID" required>
+                <option value="" disabled selected>Choose your ID...</option>
+                <option value="STD-000000">STD-000000</option>
+                <option value="STD-000001">STD-000001</option>
+                <option value="STD-000002">STD-000002</option>
+                <option value="STD-000003">STD-000003</option>
+                <option value="STD-000004">STD-000004</option>
+                <option value="STD-000005">STD-000005</option>
+                <!-- Add more options as needed -->
+            </select><br>
+
+            <!-- Password Field -->
+            <label for="Password">Enter your password:</label>
+            <input type="password" id="Password" name="Password" required placeholder="Type your password related with your ID"><br><br>
+
+            <!-- Radio Buttons for Attendance Status -->
+            <label for="AttendanceStatus">Attendance status:</label><br>
+                <input type="radio" id="P" name="Attendance Status" value="Present" required> <label for="P">Present</label><br>
+                <input type="radio" id="SL" name="Attendance Status" value="Sick Leave" required> <label for="SL">Sick Leave</label><br>
+                <input type="radio" id="CL" name="Attendance Status" value="Casual Leave" required> <label for="CL">Casual Leave</label><br>
+                <input type="radio" id="PSL" name="Attendance Status" value="Study Leave" required> <label for="PSL">Period of Study Leave</label><br><br>
+
+            <!-- Radio Buttons for Present Status -->
+            <label for="Present On">Present on client/home office (On leave select N/A):</label><br>
+
+                <input type="radio" id="NA" name="Present On" value="N/A" required>
+                <label for="NA">N/A</label><br>
+
+                <input type="radio" id="ClientOffice" name="Present On" value="Client Office" required>
+                <label for="ClientOffice">Client Office</label><br>
+
+                    <div id="clientOfficeText" style="display: none;">
+                        <label for="ClientOfficeName"></label>
+                        <input type="text" id="ClientOfficeName" name="ClientOfficeName" placeholder="Write the client's name" >
+                        <label for="ClientOfficeAddress"></label>
+                        <input type="text" id="ClientOfficeAddress" name="ClientOfficeAddress" placeholder="Write the client's office address" >
+                    </div>
+
+                <input type="radio" id="HomeOffice" name="Present On" value="Home Office" required>
+                <label for="HomeOffice">Home Office</label><br>
+
+                    <div id="homeOfficeText" style="display: none;">
+                        <label for="HomeOfficeName"></label>
+                        <input type="text" id="HomeOfficeName" name="HomeOfficeName" placeholder="Write the client's name" >
+                    </div><br>
+
+            <!-- Text Field for Reason -->
+            <label for="Remarks">Specify the area of work or reasons for absence:</label><br>
+            <div class="textarea">
+                <textarea name="Remarks" placeholder="Please provide details of the tasks you will be working on today for your designated client, or kindly explain the reason for your absence if you are on leave." required></textarea>
+                <div class="scroll-button" id="scrollButton"></div>
+
+            </div><br>
+
+            <div class="button-container">
+                <!-- Submit and Reset Buttons -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset Field">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
