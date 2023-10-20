@@ -1,21 +1,35 @@
 /* Apply general styles to the form */
 body {
     font-family: Arial, sans-serif;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+form::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+}
+
+form::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Set the border-radius to make it rounded */
+}
+
+/* Firefox */
+form {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #ccc transparent; /* Set the color of the scrollbar thumb */
 }
 
 form {
     width: 450px;
-    height: 93vh; /* Set a fixed height, 80% of the viewport height */
+    height: 90vh;
     margin: 0 auto;
     padding: 15px;
-    border-radius: 0px;
+    border-radius: 5px; /* Set border-radius for rounded corners */
     border: 1px solid #ccc;
-    background-color: white;
-    opacity: 100;
-    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
-    /* Center the form vertically */
+    background-color: rgba(255, 255, 255, 0.8); /* Set background color with opacity */
+    overflow-y: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -276,4 +290,24 @@ input[name="Present In"][value="Home Office"]:checked ~ #homeOfficeText {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Style the input fields */
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="ID"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff0000; /* Change border color when focused */
+    box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.5); /* Add box shadow when focused */
+    outline: none; /* Remove default outline style */
+}
+
+/* Optional: Change background color when focused */
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="ID"]:focus,
+select:focus,
+textarea:focus {
+    background-color: #faffcb; /* Change background color when focused */
 }
