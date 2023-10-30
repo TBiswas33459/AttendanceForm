@@ -1,3 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyeTfiWRrYPKYxN95eF77HPIoBVuwy08dIgVoEcAJjKmB1k2VR1d7SVVQs5Cv1WATTeDw/exec';
 
 const form = document.forms['Attendance-Form'];
@@ -5,4 +262,373 @@ const loaderContainer = document.createElement('div');
 loaderContainer.className = 'loader-container';
 const loader = document.createElement('div');
 loader.className = 'loader';
-var _0x4c002f=_0xcd59;(function(_0x5c6063,_0x50b511){var _0x45aa31=_0xcd59,_0x4cc540=_0x5c6063();while(!![]){try{var _0xf8892c=-parseInt(_0x45aa31(0xf4))/0x1*(-parseInt(_0x45aa31(0xee))/0x2)+-parseInt(_0x45aa31(0xdc))/0x3+parseInt(_0x45aa31(0xef))/0x4+parseInt(_0x45aa31(0xbe))/0x5*(-parseInt(_0x45aa31(0xf3))/0x6)+parseInt(_0x45aa31(0x100))/0x7*(parseInt(_0x45aa31(0x119))/0x8)+parseInt(_0x45aa31(0x114))/0x9*(parseInt(_0x45aa31(0xc7))/0xa)+-parseInt(_0x45aa31(0xd2))/0xb;if(_0xf8892c===_0x50b511)break;else _0x4cc540['push'](_0x4cc540['shift']());}catch(_0x582367){_0x4cc540['push'](_0x4cc540['shift']());}}}(_0x5c49,0x1999d),form['addEventListener'](_0x4c002f(0x126),_0x5d4139=>{var _0x5d3e68=_0x4c002f;_0x5d4139[_0x5d3e68(0xf0)](),validateForm()&&(document[_0x5d3e68(0xd1)][_0x5d3e68(0x10a)](loaderContainer),loaderContainer['appendChild'](loader),fetch(scriptURL,{'method':'POST','body':new FormData(form)})['then'](_0x2ab6f9=>{var _0x2a92bf=_0x5d3e68;alert(_0x2a92bf(0x102)),document[_0x2a92bf(0xd1)][_0x2a92bf(0xeb)](loaderContainer),window[_0x2a92bf(0xda)]['reload']();})[_0x5d3e68(0x101)](_0x3c25fd=>{var _0x166640=_0x5d3e68;console[_0x166640(0xc3)](_0x166640(0x11a),_0x3c25fd[_0x166640(0x127)]),document['body']['removeChild'](loaderContainer);}));}),document[_0x4c002f(0x117)](_0x4c002f(0x11f),function(){var _0x3593f4=_0x4c002f,_0x36d668=new Date(),_0x57db17=formatDateForGoogleSheets(_0x36d668);document[_0x3593f4(0x10d)](_0x3593f4(0x120))[_0x3593f4(0x10f)]=_0x57db17;}));function filterIDs(){var _0x56c1c0=_0x4c002f,_0x549e8f,_0x4f1600,_0x979e63,_0x154742,_0x464477;_0x549e8f=document[_0x56c1c0(0x10d)](_0x56c1c0(0xcf)),_0x4f1600=_0x549e8f[_0x56c1c0(0x10f)][_0x56c1c0(0xcc)](),_0x979e63=document[_0x56c1c0(0x10d)]('ID'),_0x154742=_0x979e63['getElementsByTagName']('option');for(_0x464477=0x0;_0x464477<_0x154742['length'];_0x464477++){var _0x1ea104=_0x154742[_0x464477]['value']['toUpperCase']();_0x1ea104[_0x56c1c0(0xe8)](_0x4f1600)>-0x1?_0x154742[_0x464477]['style'][_0x56c1c0(0xdd)]='':_0x154742[_0x464477]['style']['display']=_0x56c1c0(0xcd);}}function formatDateForGoogleSheets(_0xe7ea51){var _0x56eb33=_0x4c002f,_0x12cdd6=_0xe7ea51[_0x56eb33(0x104)](),_0x763f12=_0xe7ea51[_0x56eb33(0xfb)]()+0x1,_0x20bae8=_0xe7ea51[_0x56eb33(0x118)](),_0x554c2b=_0xe7ea51['getHours'](),_0x58368f=_0xe7ea51[_0x56eb33(0x11b)](),_0x5dd567=_0xe7ea51[_0x56eb33(0xf8)](),_0x21c11e=_0x554c2b>=0xc?'PM':'AM';return _0x554c2b=_0x554c2b%0xc,_0x554c2b=_0x554c2b?_0x554c2b:0xc,_0x12cdd6=padZero(_0x12cdd6),_0x763f12=padZero(_0x763f12),_0x554c2b=padZero(_0x554c2b),_0x58368f=padZero(_0x58368f),_0x5dd567=padZero(_0x5dd567),_0x12cdd6+'/'+_0x763f12+'/'+_0x20bae8+',\x20'+_0x554c2b+':'+_0x58368f+':'+_0x5dd567+'\x20'+_0x21c11e;}function padZero(_0x95eb6b){return(_0x95eb6b<0xa?'0':'')+_0x95eb6b;}function validateForm(){var _0x52dd16=_0x4c002f,_0x290552=new Date();_0x290552[_0x52dd16(0x12e)](_0x290552[_0x52dd16(0xce)]()+0x6);var _0x334e38=new Date(document[_0x52dd16(0x10d)]('Attendance\x20Date')[_0x52dd16(0x10f)]),_0x13e9ad=new Date(_0x290552),_0x132017=new Date()[_0x52dd16(0xf5)](_0x52dd16(0xbd),{'hour12':![],'hour':'numeric','minute':'numeric'}),_0x4334fb=document[_0x52dd16(0x10d)]('ID')[_0x52dd16(0x10f)],_0x1902fa=document[_0x52dd16(0x10d)](_0x52dd16(0xc9))['value'],_0x1b020a={'PTN-000008':_0x52dd16(0x130),'EMP-000059':_0x52dd16(0x10b),'EMP-000137':_0x52dd16(0xcb),'EMP-000292':'22072','EMP-000645':_0x52dd16(0xca),'EMP-000666':'97718','EMP-000670':_0x52dd16(0xfa),'EMP-000705':_0x52dd16(0xf9),'EMP-000741':_0x52dd16(0xd9),'EMP-000747':_0x52dd16(0x129),'EMP-000766':'67549','STD-001229':_0x52dd16(0xfc),'STD-001259':_0x52dd16(0x12d),'STD-001321':_0x52dd16(0x11e),'STD-001331':_0x52dd16(0x10c),'STD-001360':'99971','STD-001472':_0x52dd16(0x11c),'STD-001475':_0x52dd16(0xc0),'STD-001492':_0x52dd16(0xd4),'STD-001539':_0x52dd16(0xd3),'STD-001567':'71689','STD-001636':_0x52dd16(0xea),'STD-001637':_0x52dd16(0x128),'STD-001641':'49502','STD-001642':'58554','STD-001659':_0x52dd16(0x10e),'STD-001808':'92610','STD-001846':_0x52dd16(0x123),'STD-001856':_0x52dd16(0x106),'STD-001864':_0x52dd16(0x116),'STD-001876':_0x52dd16(0x110),'STD-001969':_0x52dd16(0x12b),'STD-001982':_0x52dd16(0xbc),'STD-001983':_0x52dd16(0xe6)};if(_0x1902fa!==_0x1b020a[_0x4334fb])return alert(_0x52dd16(0x12f)),![];var _0x360c88,_0x46c1e2;if(_0x334e38['toDateString']()===_0x290552[_0x52dd16(0xe0)]())_0x360c88=_0x52dd16(0x111),_0x46c1e2=_0x52dd16(0x131);else return alert(_0x52dd16(0xf2)),![];var _0x5f1b04=document[_0x52dd16(0x12c)](_0x52dd16(0x109))[_0x52dd16(0x10f)],_0x438f3a=document[_0x52dd16(0x12c)]('input[name=\x22Present\x20On\x22]:checked')['value'];if(_0x5f1b04===_0x52dd16(0xc8)&&_0x438f3a!=='Client\x20Office'&&_0x438f3a!==_0x52dd16(0x125))return alert(_0x52dd16(0xc4)),![];if((_0x5f1b04===_0x52dd16(0xc2)||_0x5f1b04===_0x52dd16(0x122)||_0x5f1b04===_0x52dd16(0xe5))&&_0x438f3a!==_0x52dd16(0xed))return alert('You\x20can\x20only\x20select\x20\x27N/A\x27\x20when\x20\x27Sick\x20Leave,\x27\x20\x27Casual\x20Leave,\x27\x20or\x20\x27Period\x20of\x20Study\x20Leave\x27\x20is\x20chosen.'),![];if(_0x334e38[_0x52dd16(0xe0)]()===_0x290552[_0x52dd16(0xe0)]()&&_0x132017>=_0x360c88&&_0x132017<=_0x46c1e2){var _0x1b4efc=document[_0x52dd16(0x10d)](_0x52dd16(0xdb)),_0x48c58d=document[_0x52dd16(0x10d)]('HomeOffice'),_0x107129=document['getElementById']('NA');if(_0x1b4efc[_0x52dd16(0xe3)]){var _0x405309=document[_0x52dd16(0x10d)]('ClientOfficeName')[_0x52dd16(0x10f)],_0x46dcbb=document['getElementById'](_0x52dd16(0x113))[_0x52dd16(0x10f)];if(_0x405309===''||_0x46dcbb===''){}}else{if(_0x48c58d[_0x52dd16(0xe3)]){var _0x3113f8=document[_0x52dd16(0x10d)](_0x52dd16(0xbf))[_0x52dd16(0x10f)];if(_0x3113f8===''){}}}return!![];}else return alert(_0x52dd16(0xfd)),![];}const clientOfficeRadio=document[_0x4c002f(0x10d)](_0x4c002f(0xdb)),homeOfficeRadio=document[_0x4c002f(0x10d)](_0x4c002f(0xe2)),naRadio=document[_0x4c002f(0x10d)]('NA'),clientOfficeText=document[_0x4c002f(0x10d)](_0x4c002f(0x115)),homeOfficeText=document[_0x4c002f(0x10d)](_0x4c002f(0xd8)),clientOfficeName=document[_0x4c002f(0x10d)]('ClientOfficeName'),clientOfficeAddress=document['getElementById']('ClientOfficeAddress'),homeOfficeName=document[_0x4c002f(0x10d)](_0x4c002f(0xbf));function _0x5c49(){var _0x1afa77=['38730','94676','getMonth','14093','You\x20can\x20only\x20submit\x20the\x20attendance\x20between\x207:00\x20AM\x20to\x2011:00\x20AM\x20on\x20the\x20selected\x20day.','disabled','querySelectorAll','1085nAitOS','catch','Thank\x20you!\x20your\x20form\x20is\x20submitted\x20successfully.','required','getDate','ClientOfficeName','13207','console','bind','input[name=\x22Attendance\x20Status\x22]:checked','appendChild','44876','31810','getElementById','36603','value','67724','07:00','add','ClientOfficeAddress','1137501aEGxnx','clientOfficeText','82547','addEventListener','getFullYear','1688bDpoYm','Error!','getMinutes','58388','length','26271','DOMContentLoaded','Submission\x20Time','hidden','Casual\x20Leave','67164','info','Home\x20Office','submit','message','72502','76049','{}.constructor(\x22return\x20this\x22)(\x20)','36386','querySelector','30605','setHours','Invalid\x20password.\x20Please\x20enter\x20your\x20unique\x20password.','sir','11:00','click','86390','en-US','255995lSYbjH','HomeOfficeName','41899','scrollButton','Sick\x20Leave','error','You\x20can\x20only\x20select\x20\x27Client\x20Office\x27\x20or\x20\x27Home\x20Office\x27\x20when\x20\x27Present\x27\x20is\x20chosen.','(((.+)+)+)+$','table','10jqnJwj','Present','Password','92312','56258','toUpperCase','none','getHours','search','input[name=\x22Attendance\x20Status\x22]','body','531245JAzDNn','58757','48828','block','input[name=\x22Present\x20On\x22]','toString','homeOfficeText','56346','location','ClientOffice','400218NGYhOi','display','scrollHeight','classList','toDateString','change','HomeOffice','checked','forEach','Study\x20Leave','25840','apply','indexOf','height','32349','removeChild','exception','N/A','132942sLyyIl','653580vlCCWu','preventDefault','return\x20(function()\x20','You\x20can\x20only\x20submit\x20the\x20selected\x20date\x20attendance\x20between\x207:00\x20AM\x20to\x2011:00\x20AM\x20on\x20the\x20same\x20day.','12qkevsB','1UKUVED','toLocaleTimeString','__proto__','style','getSeconds'];_0x5c49=function(){return _0x1afa77;};return _0x5c49();}function handleRadioChange(){var _0x431f57=_0x4c002f,_0x1fb128=(function(){var _0x38b2d4=!![];return function(_0x28df4d,_0x31cf18){var _0x22dd0d=_0x38b2d4?function(){var _0x35fcd5=_0xcd59;if(_0x31cf18){var _0x390f27=_0x31cf18[_0x35fcd5(0xe7)](_0x28df4d,arguments);return _0x31cf18=null,_0x390f27;}}:function(){};return _0x38b2d4=![],_0x22dd0d;};}()),_0x13c764=_0x1fb128(this,function(){var _0x2e4874=_0xcd59;return _0x13c764[_0x2e4874(0xd7)]()[_0x2e4874(0xcf)]('(((.+)+)+)+$')['toString']()['constructor'](_0x13c764)[_0x2e4874(0xcf)](_0x2e4874(0xc5));});_0x13c764();var _0x3ea326=(function(){var _0x5ea764=!![];return function(_0x182973,_0x462fc6){var _0x38b00b=_0x5ea764?function(){var _0x10d85f=_0xcd59;if(_0x462fc6){var _0x142f54=_0x462fc6[_0x10d85f(0xe7)](_0x182973,arguments);return _0x462fc6=null,_0x142f54;}}:function(){};return _0x5ea764=![],_0x38b00b;};}()),_0x3a029c=_0x3ea326(this,function(){var _0x4bb04c=_0xcd59,_0x129e2c=function(){var _0x42d8cc=_0xcd59,_0x3a1d7f;try{_0x3a1d7f=Function(_0x42d8cc(0xf1)+_0x42d8cc(0x12a)+');')();}catch(_0x44837c){_0x3a1d7f=window;}return _0x3a1d7f;},_0x279646=_0x129e2c(),_0x26650a=_0x279646[_0x4bb04c(0x107)]=_0x279646['console']||{},_0x43fef1=['log','warn',_0x4bb04c(0x124),_0x4bb04c(0xc3),_0x4bb04c(0xec),_0x4bb04c(0xc6),'trace'];for(var _0x17b6bc=0x0;_0x17b6bc<_0x43fef1[_0x4bb04c(0x11d)];_0x17b6bc++){var _0x574112=_0x3ea326['constructor']['prototype'][_0x4bb04c(0x108)](_0x3ea326),_0x360af6=_0x43fef1[_0x17b6bc],_0x12e03e=_0x26650a[_0x360af6]||_0x574112;_0x574112[_0x4bb04c(0xf6)]=_0x3ea326['bind'](_0x3ea326),_0x574112['toString']=_0x12e03e[_0x4bb04c(0xd7)]['bind'](_0x12e03e),_0x26650a[_0x360af6]=_0x574112;}});_0x3a029c();if(clientOfficeRadio[_0x431f57(0xe3)])clientOfficeText['style']['display']=_0x431f57(0xd5),homeOfficeText['style']['display']=_0x431f57(0xcd),clientOfficeName[_0x431f57(0x103)]=!![],clientOfficeAddress[_0x431f57(0x103)]=!![],homeOfficeName['required']=![];else{if(homeOfficeRadio[_0x431f57(0xe3)])clientOfficeText[_0x431f57(0xf7)][_0x431f57(0xdd)]=_0x431f57(0xcd),homeOfficeText[_0x431f57(0xf7)]['display']=_0x431f57(0xd5),clientOfficeName[_0x431f57(0x103)]=![],clientOfficeAddress[_0x431f57(0x103)]=![],homeOfficeName[_0x431f57(0x103)]=!![];else naRadio[_0x431f57(0xe3)]&&(clientOfficeText[_0x431f57(0xf7)]['display']='none',homeOfficeText[_0x431f57(0xf7)]['display']=_0x431f57(0xcd),clientOfficeName[_0x431f57(0x103)]=![],clientOfficeAddress[_0x431f57(0x103)]=![],homeOfficeName[_0x431f57(0x103)]=![]);}}function _0xcd59(_0x3be539,_0x535d4b){var _0x5c39c0=_0x5c49();return _0xcd59=function(_0x44cf2d,_0x1a6732){_0x44cf2d=_0x44cf2d-0xbc;var _0x45bde2=_0x5c39c0[_0x44cf2d];return _0x45bde2;},_0xcd59(_0x3be539,_0x535d4b);}function handleRadioChange(){var _0x91fefa=_0x4c002f;clientOfficeName[_0x91fefa(0x10f)]='',clientOfficeAddress[_0x91fefa(0x10f)]='',homeOfficeName[_0x91fefa(0x10f)]='';if(clientOfficeRadio[_0x91fefa(0xe3)])clientOfficeText[_0x91fefa(0xf7)]['display']=_0x91fefa(0xd5),homeOfficeText[_0x91fefa(0xf7)][_0x91fefa(0xdd)]=_0x91fefa(0xcd),clientOfficeName[_0x91fefa(0x103)]=!![],clientOfficeAddress['required']=!![],homeOfficeName[_0x91fefa(0x103)]=![];else{if(homeOfficeRadio[_0x91fefa(0xe3)])clientOfficeText['style']['display']=_0x91fefa(0xcd),homeOfficeText[_0x91fefa(0xf7)][_0x91fefa(0xdd)]=_0x91fefa(0xd5),clientOfficeName['required']=![],clientOfficeAddress['required']=![],homeOfficeName['required']=!![];else naRadio[_0x91fefa(0xe3)]&&(clientOfficeText['style'][_0x91fefa(0xdd)]='none',homeOfficeText[_0x91fefa(0xf7)][_0x91fefa(0xdd)]=_0x91fefa(0xcd),clientOfficeName['required']=![],clientOfficeAddress[_0x91fefa(0x103)]=![],homeOfficeName[_0x91fefa(0x103)]=![]);}}clientOfficeRadio[_0x4c002f(0x117)]('change',handleRadioChange),homeOfficeRadio[_0x4c002f(0x117)](_0x4c002f(0xe1),handleRadioChange),naRadio[_0x4c002f(0x117)]('change',handleRadioChange),handleRadioChange();const textarea=document[_0x4c002f(0x12c)]('.textarea\x20textarea'),scrollButton=document[_0x4c002f(0x10d)](_0x4c002f(0xc1));textarea['addEventListener']('input',()=>{var _0x359dfc=_0x4c002f;textarea[_0x359dfc(0xde)]>0x64?scrollButton['classList']['remove'](_0x359dfc(0x121)):scrollButton[_0x359dfc(0xdf)]['add'](_0x359dfc(0x121));}),scrollButton[_0x4c002f(0x117)](_0x4c002f(0x132),()=>{var _0x49d571=_0x4c002f;textarea[_0x49d571(0xf7)][_0x49d571(0xe9)]=textarea[_0x49d571(0xde)]+'px',scrollButton[_0x49d571(0xdf)][_0x49d571(0x112)](_0x49d571(0x121));}),document[_0x4c002f(0xff)](_0x4c002f(0xd0))[_0x4c002f(0xe4)](function(_0x2f4c06){var _0x349cf8=_0x4c002f;_0x2f4c06[_0x349cf8(0x117)](_0x349cf8(0xe1),function(){var _0x347c09=_0x349cf8,_0x54c61f=document[_0x347c09(0x10d)]('NA'),_0x1e2e03=document[_0x347c09(0x10d)](_0x347c09(0x115)),_0x19e631=document['getElementById'](_0x347c09(0xd8));document['getElementById']('ClientOfficeName')[_0x347c09(0x10f)]='',document[_0x347c09(0x10d)](_0x347c09(0x113))[_0x347c09(0x10f)]='',document[_0x347c09(0x10d)](_0x347c09(0xbf))[_0x347c09(0x10f)]='',_0x1e2e03['style'][_0x347c09(0xdd)]='none',_0x19e631[_0x347c09(0xf7)]['display']=_0x347c09(0xcd),this[_0x347c09(0x10f)]==='Present'?(_0x54c61f[_0x347c09(0xe3)]=![],_0x54c61f['disabled']=!![],document[_0x347c09(0x10d)](_0x347c09(0xdb))['disabled']=![],document['getElementById'](_0x347c09(0xe2))['disabled']=![]):(_0x54c61f[_0x347c09(0xe3)]=!![],_0x54c61f[_0x347c09(0xfe)]=![],document[_0x347c09(0x10d)]('ClientOffice')[_0x347c09(0xfe)]=!![],document[_0x347c09(0x10d)]('HomeOffice')[_0x347c09(0xfe)]=!![]);});}),document[_0x4c002f(0xff)](_0x4c002f(0xd6))[_0x4c002f(0xe4)](function(_0x5af390){var _0x2a81b8=_0x4c002f;_0x5af390[_0x2a81b8(0x117)](_0x2a81b8(0xe1),function(){var _0x30394a=_0x2a81b8,_0x9b2a2=document[_0x30394a(0x10d)](_0x30394a(0x115)),_0x25133e=document[_0x30394a(0x10d)](_0x30394a(0xd8));document[_0x30394a(0x10d)](_0x30394a(0x105))[_0x30394a(0x10f)]='',document[_0x30394a(0x10d)]('ClientOfficeAddress')[_0x30394a(0x10f)]='',document[_0x30394a(0x10d)](_0x30394a(0xbf))[_0x30394a(0x10f)]='',_0x9b2a2[_0x30394a(0xf7)][_0x30394a(0xdd)]='none',_0x25133e[_0x30394a(0xf7)][_0x30394a(0xdd)]=_0x30394a(0xcd);if(this['value']==='Client\x20Office')_0x9b2a2[_0x30394a(0xf7)][_0x30394a(0xdd)]=_0x30394a(0xd5);else this[_0x30394a(0x10f)]===_0x30394a(0x125)&&(_0x25133e['style'][_0x30394a(0xdd)]=_0x30394a(0xd5));});}),document[_0x4c002f(0xff)]('input[name=\x22Attendance\x20Status\x22]')[_0x4c002f(0xe4)](function(_0x1cf95b){var _0x361f89=_0x4c002f;_0x1cf95b[_0x361f89(0x117)]('change',function(){var _0x4164a9=_0x361f89,_0x43d228=document[_0x4164a9(0x10d)]('NA');(this[_0x4164a9(0x10f)]===_0x4164a9(0xc2)||this[_0x4164a9(0x10f)]===_0x4164a9(0x122)||this[_0x4164a9(0x10f)]===_0x4164a9(0xe5))&&(_0x43d228[_0x4164a9(0xe3)]=!![],_0x43d228[_0x4164a9(0xfe)]=![]);});});
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (validateForm()) {
+        // Append loader container to body
+        document.body.appendChild(loaderContainer);
+        loaderContainer.appendChild(loader);
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                alert("Thank you! your form is submitted successfully.");
+                // Remove loader container
+                document.body.removeChild(loaderContainer);
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                // Remove loader container
+                document.body.removeChild(loaderContainer);
+            });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current date and time
+    var submissionTime = new Date();
+    var formattedSubmissionTime = formatDateForGoogleSheets(submissionTime);
+    document.getElementById("Submission Time").value = formattedSubmissionTime;
+});
+
+
+function filterIDs() {
+    var input, filter, ul, option, i;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('ID');
+    option = ul.getElementsByTagName('option');
+
+    for (i = 0; i < option.length; i++) {
+        var id = option[i].value.toUpperCase();
+        if (id.indexOf(filter) > -1) {
+            option[i].style.display = '';
+        } else {
+            option[i].style.display = 'none';
+        }
+    }
+}
+
+
+function formatDateForGoogleSheets(date) {
+    var day = date.getDate();
+    var month = date.getMonth() + 1; // Month is zero-based, so we add 1
+    var year = date.getFullYear();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // "0" should be "12"
+
+    // Pad single-digit day, month, hours, minutes, and seconds with leading zeros
+    day = padZero(day);
+    month = padZero(month);
+    hours = padZero(hours);
+    minutes = padZero(minutes);
+    seconds = padZero(seconds);
+
+    return day + '/' + month + '/' + year + ', ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+}
+function padZero(num) {
+    return (num < 10 ? '0' : '') + num;
+}
+
+
+function validateForm() {
+
+    // Get the current date and time in Bangladesh time zone (UTC+6)
+    var currentDate = new Date();
+    currentDate.setHours(currentDate.getHours() + 6); // Adjust for UTC+6
+
+    var selectedDate = new Date(document.getElementById('Attendance Date').value);
+    var maxAllowedDate = new Date(currentDate);
+
+    var currentTime = new Date().toLocaleTimeString('en-US', { hour12: false, hour: 'numeric', minute: 'numeric' });
+    var userId = document.getElementById("ID").value;
+    var password = document.getElementById("Password").value;
+
+    // Create a mapping of user IDs to unique passwords
+    var passwordMapping = {
+        "PTN-000008": "sir",
+        "EMP-000059": "44876",
+        "EMP-000137": "56258",
+        "EMP-000292": "22072",
+        "EMP-000645": "92312",
+        "EMP-000666": "97718",
+        "EMP-000670": "94676",
+        "EMP-000705": "38730",
+        "EMP-000741": "56346",
+        "EMP-000747": "76049",
+        "EMP-000766": "67549",
+        "STD-001229": "14093",
+        "STD-001259": "30605",
+        "STD-001321": "26271",
+        "STD-001331": "31810",
+        "STD-001360": "99971",
+        "STD-001472": "58388",
+        "STD-001475": "41899",
+        "STD-001492": "48828",
+        "STD-001539": "58757",
+        "STD-001567": "71689",
+        "STD-001636": "32349",
+        "STD-001637": "72502",
+        "STD-001641": "49502",
+        "STD-001642": "58554",
+        "STD-001659": "36603",
+        "STD-001808": "92610",
+        "STD-001846": "67164",
+        "STD-001856": "13207",
+        "STD-001864": "82547",
+        "STD-001876": "67724",
+        "STD-001969": "36386",
+        "STD-001982": "86390",
+        "STD-001983": "25840",
+
+        // Add more mappings as needed
+    };
+
+
+    // Check if the entered password matches the unique password for the selected user ID
+    if (password !== passwordMapping[userId]) {
+        alert("Invalid password. Please enter your unique password.");
+        return false;
+    }
+
+
+    // Calculate the start and end times for attendance submission
+    var startTime;
+    var endTime;
+
+    if (selectedDate.toDateString() === currentDate.toDateString()) {
+        // If attendance date is the same as the current date
+        startTime = "07:00"; // 7:00 AM
+        endTime = "11:00";   // 10:05 AM
+    } else {
+        // Attendance date is not within the allowed range
+        alert("You can only submit the selected date attendance between 7:00 AM to 11:00 AM on the same day.");
+        return false;
+    }
+
+
+    var attendanceStatus = document.querySelector('input[name="Attendance Status"]:checked').value;
+    var presentOn = document.querySelector('input[name="Present On"]:checked').value;
+
+        if (attendanceStatus === 'Present' && presentOn !== 'Client Office' && presentOn !== 'Home Office') {
+            alert("You can only select 'Client Office' or 'Home Office' when 'Present' is chosen.");
+            return false;
+        }
+
+        if ((attendanceStatus === 'Sick Leave' || attendanceStatus === 'Casual Leave' || attendanceStatus === 'Study Leave') && presentOn !== 'N/A') {
+            alert("You can only select 'N/A' when 'Sick Leave,' 'Casual Leave,' or 'Period of Study Leave' is chosen.");
+            return false;
+        }
+
+
+    // Check if the current time is within the allowed range
+    if (
+        (selectedDate.toDateString() === currentDate.toDateString() && currentTime >= startTime && currentTime <= endTime)
+    ) {
+        // Check the selected radio button
+        var clientOfficeRadio = document.getElementById("ClientOffice");
+        var homeOfficeRadio = document.getElementById("HomeOffice");
+        var naRadio = document.getElementById("NA");
+
+        if (clientOfficeRadio.checked) {
+            // Check if the required fields for Client Office are filled in
+            var clientOfficeName = document.getElementById("ClientOfficeName").value;
+            var clientOfficeAddress = document.getElementById("ClientOfficeAddress").value;
+
+            if (clientOfficeName === "" || clientOfficeAddress === "") {
+                // Handle required fields validation
+            }
+        } else if (homeOfficeRadio.checked) {
+            // Check if the required field for Home Office is filled in
+            var homeOfficeName = document.getElementById("HomeOfficeName").value;
+
+            if (homeOfficeName === "") {
+                // Handle required field validation
+            }
+        }
+
+        return true; // Attendance submission is allowed
+    } else {
+        alert("You can only submit the attendance between 7:00 AM to 11:00 AM on the selected day.");
+        return false; // Attendance submission is not allowed
+    }
+}
+
+
+// Get references to the radio buttons and text fields
+const clientOfficeRadio = document.getElementById("ClientOffice");
+const homeOfficeRadio = document.getElementById("HomeOffice");
+const naRadio = document.getElementById("NA");
+const clientOfficeText = document.getElementById("clientOfficeText");
+const homeOfficeText = document.getElementById("homeOfficeText");
+
+
+// Additional text fields for the client office
+const clientOfficeName = document.getElementById("ClientOfficeName");
+const clientOfficeAddress = document.getElementById("ClientOfficeAddress");
+const homeOfficeName = document.getElementById("HomeOfficeName");
+
+
+// Add event listener to handle radio button changes
+function handleRadioChange() {
+    if (clientOfficeRadio.checked) {
+        clientOfficeText.style.display = "block";
+        homeOfficeText.style.display = "none";
+
+        // Make client office fields required
+        clientOfficeName.required = true;
+        clientOfficeAddress.required = true;
+        homeOfficeName.required = false; // Not required
+    } else if (homeOfficeRadio.checked) {
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "block";
+
+        // Make home office field required
+        clientOfficeName.required = false; // Not required
+        clientOfficeAddress.required = false; // Not required
+        homeOfficeName.required = true;
+    } else if (naRadio.checked) {
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "none";
+
+        // No fields are required
+        clientOfficeName.required = false;
+        clientOfficeAddress.required = false;
+        homeOfficeName.required = false;
+    }
+}
+
+
+function handleRadioChange() {
+    // Clear the content of both text fields when radio buttons are changed
+    clientOfficeName.value = "";
+    clientOfficeAddress.value = "";
+    homeOfficeName.value = "";
+
+    if (clientOfficeRadio.checked) {
+        clientOfficeText.style.display = "block";
+        homeOfficeText.style.display = "none";
+
+        // Make client office fields required
+        clientOfficeName.required = true;
+        clientOfficeAddress.required = true;
+        homeOfficeName.required = false; // Not required
+    } else if (homeOfficeRadio.checked) {
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "block";
+
+        // Make home office field required
+        clientOfficeName.required = false; // Not required
+        clientOfficeAddress.required = false; // Not required
+        homeOfficeName.required = true;
+    } else if (naRadio.checked) {
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "none";
+
+        // No fields are required
+        clientOfficeName.required = false;
+        clientOfficeAddress.required = false;
+        homeOfficeName.required = false;
+    }
+}
+
+
+// Add event listener to the radio buttons to handle changes
+clientOfficeRadio.addEventListener("change", handleRadioChange);
+homeOfficeRadio.addEventListener("change", handleRadioChange);
+naRadio.addEventListener("change", handleRadioChange);
+
+// Initial setup based on the default checked radio button
+handleRadioChange(); 
+
+// Get references to the textarea and scroll button
+const textarea = document.querySelector('.textarea textarea');
+const scrollButton = document.getElementById('scrollButton');
+
+// Add an event listener to the textarea to check when its content changes
+textarea.addEventListener('input', () => {
+    // Check if the content exceeds the set height (e.g., 100px)
+    if (textarea.scrollHeight > 100) {
+        scrollButton.classList.remove('hidden'); // Show the scroll button
+    } else {
+        scrollButton.classList.add('hidden'); // Hide the scroll button
+    }
+});
+
+// Add an event listener to the scroll button to scroll to the bottom of the textarea
+scrollButton.addEventListener('click', () => {
+    textarea.style.height = textarea.scrollHeight + 'px'; // Expand the textarea to show all content
+    scrollButton.classList.add('hidden'); // Hide the scroll button
+});
+
+
+
+// Add event listener to the radio buttons to manage the "N/A" radio button and clear/hide text fields
+document.querySelectorAll('input[name="Attendance Status"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        var naRadio = document.getElementById('NA');
+        var clientOfficeText = document.getElementById('clientOfficeText');
+        var homeOfficeText = document.getElementById('homeOfficeText');
+
+        // Clear and hide the text fields
+        document.getElementById("ClientOfficeName").value = "";
+        document.getElementById("ClientOfficeAddress").value = "";
+        document.getElementById("HomeOfficeName").value = "";
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "none";
+
+        if (this.value === 'Present') {
+            naRadio.checked = false; // Uncheck "N/A"
+            naRadio.disabled = true; // Disable "N/A"
+            document.getElementById('ClientOffice').disabled = false;
+            document.getElementById('HomeOffice').disabled = false;
+        } else {
+            naRadio.checked = true; // Check "N/A"
+            naRadio.disabled = false; // Enable "N/A"
+            document.getElementById('ClientOffice').disabled = true;
+            document.getElementById('HomeOffice').disabled = true;
+        }
+    });
+});
+
+
+// Add event listener to the radio buttons to manage the "Client Office" and "Home Office" text fields
+document.querySelectorAll('input[name="Present On"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        var clientOfficeText = document.getElementById('clientOfficeText');
+        var homeOfficeText = document.getElementById('homeOfficeText');
+
+        // Clear and hide the text fields
+        document.getElementById("ClientOfficeName").value = "";
+        document.getElementById("ClientOfficeAddress").value = "";
+        document.getElementById("HomeOfficeName").value = "";
+        clientOfficeText.style.display = "none";
+        homeOfficeText.style.display = "none";
+
+        if (this.value === 'Client Office') {
+            clientOfficeText.style.display = "block";
+        } else if (this.value === 'Home Office') {
+            homeOfficeText.style.display = "block";
+        }
+    });
+});
+
+
+// Automatically select "N/A" when "Sick Leave," "Casual Leave," or "Period of Study Leave" is chosen
+document.querySelectorAll('input[name="Attendance Status"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        var naRadio = document.getElementById('NA');
+        if (this.value === 'Sick Leave' || this.value === 'Casual Leave' || this.value === 'Study Leave') {
+            naRadio.checked = true; // Check "N/A"
+            naRadio.disabled = false; // Enable "N/A"
+        }
+    });
+});
